@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@100;200;400&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.bodycontainer{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    /* background-color: rgb(245, 236, 236); */
+    background-color: bisque;
+    /* background-color: rgb(231, 217, 154); */
+}
+.image-container i{
+    color: rgb(216, 118, 118);
+}
+.image-container{
+    height: 530px;
+    width: 60%;
+    
+    /* background-color: rgb(247, 240, 184); */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 35px;
+    height: 500px;
+}
+.image-container img{
+    /* width: 40%; */
+    height: 350px;
+    /* height: 430px; */
+}
+.arraow-center{
+    position: relative;
+    /* top: 250px; */
+    /* font-size: 100px; */
+    
+}
+i{
+    font-size: 50px;
+
+}
+.bonus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: url("./assets/images/spinner-without-offer.webp"); */
+    /* align-items: ; */
+    /* float: right; */
+    margin-top: 30px;
+    height: 530px;
+    width: 100%;
+    /* width: 70%; */
+    /* width: 500px; */
+    /* background-color: bisque; */
+}
+
+.details{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* width: */
+    padding: 5px 30px;
+    /* background-color: blueviolet; */
+}
+/* .details button{
+    width: 50%;
+} */
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(243, 209, 168);
+    /* background-color: rgb(102, 93, 83); */
+    height: 250px;
+    width: 100%;
+    /* border-radius: 5px;
+    border-top-style: dotted; */
+    border-top: 10px solid rgba(131, 99, 99, 0.397);
+    border-bottom: 13px solid rgba(131, 99, 99, 0.397);
+}
+.footer .col-details{
+    /* background-color: rgb(117, 107, 128); */
+    height: 100%;
+    margin: 5px 5px;
+}
+.col-details{
+    /* font-size: 0.2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+.col-details input{
+    height: 27px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+.col-details ul li{
+    /* font-size: 20px; */
+    list-style: none;
+    /* align-self: center; */
+    float: left;
+    padding: 10px 19px;
+}
+
+
+
+.col-details  i{
+    color: rgb(48, 44, 44);
+    font-size: 40px;
+}
+.col-details span i{
+    position: relative;
+    margin-top: 3px;
+    margin-left: -5px;
+    /* border: 2px solid black; */
+    font-size: 28px;
+}
+
+
+@media only screen and (max-width: 528px) {
+    .bodycontainer{
+        display: flex;
+        flex-direction: column; 
+        height: 100%;
+    }
+
+
+    .image-container{
+     
+        width: 100%;
+        background-color: rgb(247, 240, 184);
+
+        
+    }
+ 
+    .bonus{
+        margin-top: 5px;
+        margin-bottom: 130px;
+        height: 300px;
+        /* height: 50%; */
+        /* height: 530px; */
+        /* width: 70%; */
+        /* width: 70%; */
+        /* width: 500px; */
+        /* background-color: bisque; */
+    }
+   
+    .footer i{
+        font-size: 1.8rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 640px) {
+    .bodycontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: bisque;
+        height: 100%;
+        /* background-color: red; */
+        
+    }
+    .image-container{
+        display: flex;
+        justify-content: space-around;
+        /* background-color: rgb(247, 240, 184); */
+        width: 100%;
+
+        margin: 0 50px;
+        /* margin-top: 300px; */
+        /* height: 100%; */
+        /* padding: 10px 10px; */
+        /* margin-left: -100px; */
+
+    }
+
+    .image-container img{
+        /* width: 40%; */
+        /* width: 100%; */
+        /* background-color: blue; */
+
+        height: 550px;
+    }
+    .bonus{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+     
+        /* margin-bottom: 430px; */
+        height: 530px;
+        /* width: 70%; */
+        /* width: 70%; */
+        /* width: 500px; */
+        /* background-color: bisque; */
+    }
+    .footer{
+        /* margin-top: 100px; */
+        height: 400px;
+    }
+
+  
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 850px) {
+    .image-container img{
+        /* width: 40%; */
+        height: 197px;
+    }
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+        width: 60%;
+        margin-left: 30px;
+        /* background-color: rgb(247, 240, 184); */
+        height: 400px;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */

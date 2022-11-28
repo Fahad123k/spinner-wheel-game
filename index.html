@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS only bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <title>Spinner</title>
+</head>
+
+<body>
+  <!-- navbar starts -->
+  <nav class="navbar navbar-expand-lg bg-warning bg-opacity-10 shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mivi-Roller</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar Ends -->
+
+  <!-- body-container starts -->
+
+  <div class="bodycontainer shadow-lg ">
+
+    <div class="image-container container  shadow">
+      <i class="fa-solid fa-arrow-down "></i>
+
+      <img src="./assets/images/spinner-without-offer.webp" alt="" srcset="" id="spinner">
+      <!-- <i class="fa-solid fa-arrow-down-left arraow-center"></i>        -->
+
+
+      <button id="spin" class="btn btn-dark btn-md" disabled>First Verify Email</button>
+
+    </div>
+    <div class="bonus" id="bonus">
+
+      <div class="container-sm flex-row ">
+        <form action="#" class="d-flex me-2 mb-2" role="emailVerify">
+          <!-- <i class="fab fa-check"></i> -->
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email here">
+          <!-- <button class="btn btn-outline-info" id="btn" type="submit">Verify</button> -->
+        </form>
+        <!-- <img src="./assets/images/offer.png" alt="" srcset=""  > -->
+      </div>
+
+      <div class="details  text-center" id="details">
+        <button id="reward" class="btn btn-danger btn-md">Check Reward</button>
+
+        <h6 class="mt-3" id="win">Spin and grab latest offer</h6>
+        <h2 id="offer"></h2>
+        <div class="coupon">
+          <span>
+
+            <input type="Coupon" placeholder="" disabled id="coupon" class="btn border-secondary p-md-2">
+            <button id="copyButton" class="btn btn-light " disabled>Copy</button>
+          </span>
+        </div>
+        <!-- You can win Exciting Prizes -->
+        <button class="btn btn-light btn-md mt-4" id="discount">You can win Exciting Prizes</button>
+        <div class="expiers container-fluid mt-3">
+          <p class="text-sm-center" id="Expires">Diwali offer 2 days Remaining</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- body-container Ends -->
+
+
+
+  <div class="footer shadow ">
+    <div class="col col-details">
+      <h4>Stay connect</h4>
+      <span>
+        <div class="input-group">
+          <input type="text" placeholder="Give Feedback" id="comment">
+          <i class="fa-solid fa-square-plus"></i>
+        </div>
+
+
+      </span>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#"> <i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-whatsapp-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-github-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-details">
+      <h4>News</h4>
+      <span>
+        <div class="input-group">
+          <input type="text" placeholder="Search news" id="comment">
+          <i class="fa-solid fa-square-plus"></i>
+        </div>
+
+
+      </span>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#"> <i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-whatsapp-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-youtube-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col col-details">
+      <h4>Address</h4>
+      <span>
+        <div class="input-group">
+          <!-- <input type="text" placeholder="Give Feedback" id="comment"> -->
+          <!-- <i class="fa-solid fa-square-plus"></i> -->
+        </div>
+
+
+      </span>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#"> <i class="fa-solid fa-address-book"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-solid fa-map-pin"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-solid fa-map"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-whatsapp-square"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+
+  <script>
+    let spinnerImage = document.getElementById("spinner")
+    let emailButton = document.getElementById('btn');
+    let emailChange = document.getElementById('email');
+    let spinBtn = document.getElementById('spin');
+    let Toggledetails = document.getElementById('details');
+    // let win=document.getElementById('win');
+    // var isVarified=false;
+    Toggledetails.hidden = true;
+
+
+    emailChange.addEventListener(('change'), () => {
+      console.log("on email change")
+      check();
+
+    })
+    emailButton.addEventListener(('click'), () => {
+      console.log("button is cieds")
+      check();
+
+    })
+
+
+
+    function check() {
+      let restURL = 'http://apilayer.net/api/check?access_key=c5118f1f9827f42a5fc4b231932130a8&email="+$("#email").val()+"sample%40gmail.com&smtp=1&format=1'
+      $.ajax({
+        type: "GET",
+        url: restURL,
+        dataType: "json",
+        success: renderList,
+
+      });
+
+      return false;
+    }
+
+
+    function renderList(data) {
+      if ("data.format_valid==true" && "data.smtp_check==true") {
+        console.log("email verifid")
+        alert("email verifired")
+        toogle()
+        // isVarified=true;
+      }
+      else {
+        console.log("email  WRONG verifid")
+
+      }
+    }
+
+
+    function toogle() {
+      console.log("varified block")
+
+      emailChange.disabled = "true";
+      spinnerImage.src = './assets/images/spinner-with-offer.png';
+      spinBtn.innerText = "Clik To Spin"
+      spinBtn.disabled = false;
+      Toggledetails.hidden = false;
+      // win.innerText="Congrats! You won:"
+
+    }
+  </script>
+
+</body>
+
+</html>
